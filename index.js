@@ -18,7 +18,7 @@ const apiRequestLimiter = rateLimit({
 
 app.use(cors());
 // Use the limit rule as an application middleware
-app.use(apiRequestLimiter)
+app.use(apiRequestLimiter);
 // app.use(rateLimiter);
 
 // generic GET route that we will use for the tests
